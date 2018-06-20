@@ -5,101 +5,110 @@
   <meta charset="utf-8" />
   <title>MTG123</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
-  <style>
-
-  html{
-    background-color: #4b6584
-  }
-
-  h1{
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #a5b1c2;
-    text-align: center;
-    margin: auto;
-  }
-  h2{
-    font-family: 'Source Sans Pro', sans-serif;
-    background-color: #a5b1c2;
-    width=100%;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 5px solid rgba(75, 101, 132,1.0)
-  }
-  .standardText{
-    font-family: 'Open Sans', sans-serif;
-    padding: 5px;
-  }
-  #bigDiv{
-    width: 75%;
-    background-color: #778ca3;
-    margin: auto;
-  }
-  .demoCard{
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-      width: 25%;
-      border: 5px solid rgba(165, 177, 194, 1.0);
-      box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 9px 21px 0 rgba(0, 0, 0, 0.38);
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="javascript/sketch.js"></script>
 </head>
 
 <body>
-<h1>Welcome to MTG123!</h1>
-<div id="bigDiv">
-<h2>Learning MTG: Introduction</h2>
-<div class="standardText"> <p> MTG stands for Magic: The Gathering. It is a trading card game, where each player brings a deck to the table and plays against an opponent.
-It can be very complicated to learn, but a very rewarding and strategic experience if you do learn to play.</p></div>
+  <h1 id="title" onclick="changeText()">Welcome to MTG123!</h1>
+  <div id="bigDiv">
+    <h2>Learning MTG: Introduction</h2>
+    <div class="standardText">
+      <p> MTG stands for Magic: The Gathering. It is a trading card game, where each player brings a deck to the table and plays against an opponent. It can be very complicated to learn, but a very rewarding and strategic experience if you do learn to play.</p>
+    </div>
     <h2>The goal of the game:</h2>
-      <div class="standardText">
-        <p>Each player starts with 20 health. If your opponent's heath goes to 0, they lose.
-        If all your opponent(s) lose the game, you win
-        If a card would allow you to win by some other means, you win.</p>
+    <div class="standardText">
+      <p>Each player starts with 20 health. If your opponent's heath goes to 0, they lose. If all your opponent(s) lose the game, you win If a card would allow you to win by some other means, you win.</p>
     </div>
     <h2>Mana</h2>
-      <div class="standardText"> <p>Mana is a resource you use to play cards. There are five different types.</p>
-      <image class ="demoImage" src="media/magic related photos/all mana symbols.png" alt text="The mana symbols" width="20%" height="50%"></image>
+    <div class="standardText">
+      <p>Mana is a resource you use to play cards. There are five different types.</p>
+      <image class="demoImage" src="media/magic related photos/all mana symbols.png" alt text="The mana symbols" width="20%" height="50%"></image>
       <p>In order, clockwise: White, Blue, Black, Red, and Green.</br>
-      These colors are associated with, respectectively, the lands Plains, Islands, Swamps, Mountains, and Forests.
-      Mana is produced by its respective land.</p></li></div>
+        These colors are associated with, respectectively, the lands Plains, Islands, Swamps, Mountains, and Forests. Mana is produced by its respective land.</p>
+      </li>
+    </div>
     <h2>Playing Cards:</h2>
-      <div class="standardText">
+    <div class="standardText">
       <ul>
-        <li> <p>Playing lands. Playing lands is simple. You can play one land per turn, no more. If you don't have any lands to play, too bad. You don't get a land.</li></p>
-        <li><p>Playing spells. Anything that isn't a land is a spell. To play spells, you need to use <ins><strong>mana</strong></ins>.</p>
-            <p>The amount of mana needed to play a spell is included in the upper right-hand corner. It is called the mana cost. It is made up of little symbols in circles. Either they looks like the mana symbols on lands, or they looks like a number in a grey circle. This is called generic mana.</p></li>
-            <image class="demoImage" src="media/magic related photos/1 colorless mana.svg" alt text="1 generic mana" width="100" height="100"></image>
-            <p>Lands only produce mana of a color. However, most cards have generic mana in their cost too. For example, look at khenra charioteer:</p>
+        <li>
+          <p>Playing lands. Playing lands is simple. You can play one land per turn, no more. If you don't have any lands to play, too bad. You don't get a land.</li>
+        </p>
+        <li>
+          <p>Playing spells. Anything that isn't a land is a spell. To play spells, you need to use <ins><strong>mana</strong></ins>.</p>
+          <p>The amount of mana needed to play a spell is included in the upper right-hand corner. It is called the mana cost. It is made up of little symbols in circles. Either they looks like the mana symbols on lands, or they looks like a number in a
+            grey circle. This is called generic mana.</p>
+        </li>
+        <image class="demoImage" src="media/magic related photos/1 colorless mana.svg" alt text="1 generic mana" width="100" height="100"></image>
+        <p>Lands only produce mana of a color. However, most cards have generic mana in their cost too. For example, look at khenra charioteer:</p>
+      </ul>
+      <image class="demoCard" src="media/magic card photos/khenra charioteer.png" alt text="khenra charioteer"></image>
 
-            <image class="demoCard" src="media/magic card photos/khenra charioteer2.png" alt text="khenra charioteer"></image>
+      <p>There are three symbols in the top. One is red mana, one is green mana, and one is a sngle generic mana. Green mana means you need one green mana to play it. Red mana means you need one red mana to play it. Generic mana means you need one mana of
+        <i>any</i> color to play it. So, to play khenra charioteer you would need one red mana, one green mana, and one mana of <i>any</i> color. To get mana, it's easy. You tap a land, and that land produces a mana of its color. Tapping a card means
+        turning it sideways. This usually symbolizes it being used up for the turn. You can only tap things once per turn - if something's tapped, you can't tap it again. So, in conclusion, to play khenra charioteer, you would have to tap one mountain,
+        one forest, and one land of any color. This is the same for every spell(aka every card that is not a land.) - the generic mana needs to be paired up with the colored mana to cast the spell. In this example. we used a creature, although the card
+        types vary. Mana costs are different from card to card, which influences how you play any given card.</p>
+      <p>Important note: In our examples, the generic mana is represented by a 1 in a circle. However, this is often not the case. Any number can be in that gray circle. However, several <i>colored</i> mana symbols each require their own symbol. In the example
+        of Ancient Silverback (shown below), he requires four generic mana, or mana of any color, and two green mana. Notice how the four is in a single grey circle, but both green mana are in separate circles.</p>
+      <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
+    </div>
 
-            <p>There are three symbols in the top. One is red mana, one is green mana, and one is a sngle generic mana. Green mana means you need one green mana to play it. Red mana means you need one red mana to play it. Generic mana means you need one mana of <i>any</i> color to play it. So, to play khenra charioteer you would need one red mana, one green mana, and one mana of <i>any</i> color.
-            To get mana, it's easy. You tap a land, and that land produces a mana of its color. Tapping a card means turning it sideways. This usually symbolizes it being used up for the turn. You can only tap things once per turn - if something's tapped, you can't tap it again.
-            So, in conclusion, to play khenra charioteer, you would have to tap one mountain, one forest, and one land of any color. This is the same for every spell(aka every card that is not a land.) - the generic mana needs to be paired up with the colored mana to cast the spell. In this example. we used a creature, although the card types vary. Mana costs are different from card to card, which influences how you play any given card.</p>
-            <p>Important note: In our examples, the generic mana is represented by a 1 in a circle. However, this is often not the case. Any number can be in that gray circle; more gray circles are not required. However, several <i>colored</i> mana symbols each require their own symbol. In the example of Ancient Silverback (shown below), he requires four generic mana, or mana of any color, and two green mana. Notice how the four is in a single grey circle, but both green mana are in separate circles.</p>
-            <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
-          </div>
+    <h2>Creatures</h2>
+    <div class="standardText">
+      <p>
+        Creatures are one of the most important card types in magic, and also one of the more complicated, because they have to engage in combat. Take a look at a creature. We already saw this one - ancient silverback.</p>
+      <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
+      <p>In the top left-hand corner of a creature, you have its name, and in the top right, its mana cost. These will be present regardless of whether or not this is a creature; they're in every card. Under that, a card's art, and below that, its type.
+        In this case, since the silverback is a creature, it says "creature", and then specifies ape. Most card types do not contain this specification, but creatures do. There could be several things, like "goblin shaman" or "human warrior". In this
+        case, however, it just says "ape". To the far right of that section is the set symbol. It isn't really important in terms of the game. It's color is different depending on how rare it is and the symbol is different depending on when it was released
+        but this doesn't really matter for the game.</p>
 
-        <h2>Creatures</h2>
-          <div class="standardText"><p>
-            Creatures are one of the most important card types in magic, and also one of the more complicated, because they have to engage in combat.
-            Take a look at a creature. We already saw this one - ancient silverback.</p>
-            <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
-            <p>In the top left-hand corner of a creature, you have its name, and in the top right, its mana cost. These will be present regardless of whether or not this is a creature; they're in every card.
-              Under that, a card's art, and below that, its type. In this case, since the silverback is a creature, it says "creature", and then specifies ape. Most card types do not contain this specification, but creatures do. There could be several things, like "goblin shaman" or "human warrior". In this case, however, it just says "ape".
+      <p> We're going to skip the center section to go down to the bottom for a second. On the bottom, you can see the artist's name on the left. The really important part, however, is the far right; The two numbers separated by a slash. These two numbers are a creature's <strong>power and toughness</strong>. These are the creature's attack power (power) and health (toughness). <b>Important:</b> attack (Power) is always on the <i>right</i> and health (toughness) is always on the <i>left</i>. Damage in MTG is different from damage in other games. Damage in MTG lasts until the end of the turn, then it goes away. That means that if you want to kill a creature, you have to do it in a single turn, or it'll just recover when the turn is over.
+      Look again at our ape. He has toughness 5, which means that to kill him you need to do five damage in one turn. If a creature takes damage greater than or equal to its toughness (aka if it ever goes to 0 or lower health), it dies immediately.
+      Power is the damage a creature does. This damage is the same whether the damage is to players or creatures. While we're not going to get into combat right now, know that a creature's <strong>power</strong> is its attack and its <strong>toughness</strong> is its health.</p> Something MTG players say about a creature is saying its attack and health values as two numbers, in this case saying 6/5, said six-five, because it has power 6 and toughness 5.
+
+      <p>Now lets go back up to the big square of text under the image. This is a creature's <strong>text box</strong>, and its the most complicated part of a creatures, and possibly the most important. It's what differentiates it from all of the other creatures
+        in MTG history. There are a few different kinds of things that can go in a text box. First off, a keyword ability.</p>
+
+      <image class="demoCard" src="media/magic card photos/shivan dragon.png" alt text="shivan dragon"></image>
+
+      <p>At the top of the text box, in shivan dragon, we see something that says <em>flying</em>. This is an example of a  <strong>keyword ability</strong>. This means that it's an ability that recurs and can be found on many cards throughout magic. Keyword abilities also often have explanations of their what they do in italics behind the ability itself, like on shivan dragon. Khenra charioteer is another good example of a keyword ability (in this case, the ability is <strong>trample</strong> and there is no explanation behind it). If, in the text box, there's just one word set higher than the rest, it's usually a keyword ability. <b>Note:</b> a creature can have any number of keyword abilities, like flying <i>and</i> trample. There isn't a hard set limit.</p>
+
+      <image class="demoCard" src="media/magic card photos/khenra charioteer.png" alt text="khenra charioteer"></image>
+
+      <p>Another thing khenra charioteer can teach us is about <strong>passive abilities</strong>. Under its keyword ability, khenra charioteer has a text that says "Other creatures you control have trample". This is a passive ability: it takes place all the time, regardless of whether you do something or not. Its effect is giving all of your creatures the keyword ability  <strong>trample</strong> (what that ability does is not important right now). Most keyword abilities are passive abilities that just happen to be found on many cards.</p>
+
+      <p>Passive abilities can take a few forms. Here, we're going to show an example of a <strong>triggered ability</strong>. This is a passive ability in the sense that you don't have to do anything to activate it, but is different in the sense that it isn't a continuous effect - rather, it happens everytime a certain thing happens (specified in the ability). Soul warden, for example, is a simple yet very good example of a (passive) triggered ability.</p>
+
+      <image class="demoCard" src="media/magic card photos/soul warden.png" alt text="soul warden"></image>
+
+      <p>What it says is that whenever a creature enters the <strong>battlefield</strong>, you gain 1 life. You start at 20 life, and when your life goes to 0 you lose. Battlefield is MTG speak for playing field. This ability costs you nothing when it triggers, but only triggers sometimes. It is a triggered ability.</p>
+
+      <p>Activated Abilities:<br/>
+        Activated abilities are probably the most complex kind of ability in Magic: the Gathering. They work differently than the other abilities we talked about before in that they have a <b>cost</b>. In fact, we've already looked at cards with said activated abilities. Let's jump back to one: Shivan Dragon </p>
+
+        <image class="demoCard" src="media/magic card photos/shivan dragon.png" alt text="shivan dragon"></image>
+
+        <p>Under the keyword ability <em>flying</em>, we see another ability. Activated abilities consist of two parts: a <b>cost</b> and an <b>effect</b>. It's easy to tell them apart: the cost is on the right side of the colon and the effect is on the left side. In this example, the cost of the ability is a single red mana, represented by the red mana symbol, and the effect is that Shivan Dragon gets +1/+0 until end of turn. What this means is that Shivan Dragon's power (attack) goes up by 1. However, his toughness (health) goes up by 0, so it remains unchanged. Hence, Shivan Dragon would have the stats 6/5 after using this ability once (and you would have spent one red mana). This bonus disappears at the end of your turn.</b>
+        <b>Important Note:</b> you can use an activated ability as many times per turn as you want (provided you have the mana to pay for it). So you could use Shivan Dragon's ability as much as you have the mana for in any given turn, making him a 7/5, 8/5, or even higher.</p>
+
+        <p>The last type of ability we will cover will be mana ability. This is esentially the same as an activated ability, with a cost and an effect, but this study will introduce several key concepts. Here is Elvish Mystic:</p>
+
+        <image class="demoCard" src="media/magic card photos/elvish mystic.jpg"></image>
 
 
 
-    <h2>The turn:</h2>
-      A turn in MTG has many phases. Here they are, in order.
+
+
+      <h2>The turn:</h2> A turn in MTG has many phases. Here they are, in order.
       <ul>
-        <li>The untap step. When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn.
-          During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
-        <li>The Upkeep. Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during this phase.</li>
+        <li>The untap step. When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn. During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
+        <li>The Upkeep. Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during
+          this phase.</li>
         <li>The Draw Phase. At the start of this phase, you draw a card from your <ins>library</ins>, and you put it in your hand. Library is MTG speak for deck.</li>
         <li>First Main Phase. During this turn, you play cards from your hand. </li>
-  </div>
+    </div>
 </body>
+
 </html>

@@ -1,0 +1,22 @@
+.navigationButton {
+  margin-left: 10%;
+  border-radius: 10%;
+  border-style: none;
+  height: 100%;
+  background-color: rgba(200, 200, 200, 1.0);
+}
+
+.navigationToolbar {
+  width: 75%;
+  background-color: #778ca3;
+  margin: auto;
+  height: 25px;
+  padding: 7px;
+  margin-top: 20px;
+}
+
+.navigationButton:hover {
+  background: rgba(255, 255, 255, 1.0);
+  color: rgba(200, 200, 200, 1.0);
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}

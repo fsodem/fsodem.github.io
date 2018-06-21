@@ -6,11 +6,19 @@
   <title>MTG123</title>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" type="text/css" href="css/toolbar.css"
   <script type="text/javascript" src="javascript/sketch.js"></script>
 </head>
 
 <body>
   <h1 id="title" onclick="changeText()">Welcome to MTG123!</h1>
+  <div class="navigationToolbar">
+    <button class="navigationButton" onclick="window.location.href='index.html'">Learning the basics</button>
+    <button class="navigationButton" onclick="window.location.href='dictionary/index.html'">Term dictionary</button>
+    <button class="navigationButton">Avanced rules</button>
+    <button class="navigationButton">To be decided</button>
+  </div>
+
   <div id="bigDiv">
     <h2>Learning MTG: Introduction</h2>
     <div class="standardText">
@@ -23,7 +31,7 @@
     <h2>Mana</h2>
     <div class="standardText">
       <p>Mana is a resource you use to play cards. There are five different types.</p>
-      <image class="demoImage" src="media/magic related photos/all mana symbols.png" alt text="The mana symbols" width="20%" height="50%"></image>
+      <image class="demoImage" src="media/magic related photos/all mana symbols.png" alt text="The mana symbols"></image>
       <p>In order, clockwise: White, Blue, Black, Red, and Green.</br>
         These colors are associated with, respectectively, the lands Plains, Islands, Swamps, Mountains, and Forests. Mana is produced by its respective land.</p>
       </li>
@@ -39,7 +47,7 @@
           <p>The amount of mana needed to play a spell is included in the upper right-hand corner. It is called the mana cost. It is made up of little symbols in circles. Either they looks like the mana symbols on lands, or they looks like a number in a
             grey circle. This is called generic mana.</p>
         </li>
-        <image class="demoImage" src="media/magic related photos/1 colorless mana.svg" alt text="1 generic mana" width="100" height="100"></image>
+        <image class="demoImage" src="media/magic related photos/1 colorless mana.svg" alt text="1 generic mana"></image>
         <p>Lands only produce mana of a color. However, most cards have generic mana in their cost too. For example, look at khenra charioteer:</p>
       </ul>
       <image class="demoCard" src="media/magic card photos/khenra charioteer.png" alt text="khenra charioteer"></image>
@@ -58,15 +66,19 @@
     <div class="standardText">
       <p>
         Creatures are one of the most important card types in magic, and also one of the more complicated, because they have to engage in combat. Take a look at a creature. We already saw this one - ancient silverback.</p>
+
       <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
+
       <p>In the top left-hand corner of a creature, you have its name, and in the top right, its mana cost. These will be present regardless of whether or not this is a creature; they're in every card. Under that, a card's art, and below that, its type.
         In this case, since the silverback is a creature, it says "creature", and then specifies ape. Most card types do not contain this specification, but creatures do. There could be several things, like "goblin shaman" or "human warrior". In this
         case, however, it just says "ape". To the far right of that section is the set symbol. It isn't really important in terms of the game. It's color is different depending on how rare it is and the symbol is different depending on when it was released
         but this doesn't really matter for the game.</p>
 
-      <p> We're going to skip the center section to go down to the bottom for a second. On the bottom, you can see the artist's name on the left. The really important part, however, is the far right; The two numbers separated by a slash. These two numbers are a creature's <strong>power and toughness</strong>. These are the creature's attack power (power) and health (toughness). <b>Important:</b> attack (Power) is always on the <i>right</i> and health (toughness) is always on the <i>left</i>. Damage in MTG is different from damage in other games. Damage in MTG lasts until the end of the turn, then it goes away. That means that if you want to kill a creature, you have to do it in a single turn, or it'll just recover when the turn is over.
+      <p> We're going to skip the center section to go down to the bottom for a second. On the bottom, you can see the artist's name on the left. The really important part, however, is the far right; The two numbers separated by a slash. These two numbers are a creature's <strong>power and toughness</strong>. These are the creature's attack power (power) and health (toughness). <b>Important:</b> attack (Power) is always on the <i>left</i> and health (toughness) is always on the <i>right</i>. Damage in MTG is different from damage in other games. Damage in MTG lasts until the end of the turn, then it goes away. That means that if you want to kill a creature, you have to do it in a single turn, or it'll just recover when the turn is over.
       Look again at our ape. He has toughness 5, which means that to kill him you need to do five damage in one turn. If a creature takes damage greater than or equal to its toughness (aka if it ever goes to 0 or lower health), it dies immediately.
-      Power is the damage a creature does. This damage is the same whether the damage is to players or creatures. While we're not going to get into combat right now, know that a creature's <strong>power</strong> is its attack and its <strong>toughness</strong> is its health.</p> Something MTG players say about a creature is saying its attack and health values as two numbers, in this case saying 6/5, said six-five, because it has power 6 and toughness 5.
+      Power is the damage a creature does. This damage is the same whether the damage is to players or creatures. While we're not going to get into combat right now, know that a creature's <strong>power</strong> is its attack and its <strong>toughness</strong> is its health.</p>
+
+      <p>MTG player sometimes refer to a creature by using its power and toughness. For example, a MTG player might say about Ancient Silverback "It's a 6/5". This sounds like six-five and is a very commonly used sort of MTG slang.</p>
 
       <p>Now lets go back up to the big square of text under the image. This is a creature's <strong>text box</strong>, and its the most complicated part of a creatures, and possibly the most important. It's what differentiates it from all of the other creatures
         in MTG history. There are a few different kinds of things that can go in a text box. First off, a keyword ability.</p>
@@ -90,12 +102,34 @@
 
         <image class="demoCard" src="media/magic card photos/shivan dragon.png" alt text="shivan dragon"></image>
 
-        <p>Under the keyword ability <em>flying</em>, we see another ability. Activated abilities consist of two parts: a <b>cost</b> and an <b>effect</b>. It's easy to tell them apart: the cost is on the right side of the colon and the effect is on the left side. In this example, the cost of the ability is a single red mana, represented by the red mana symbol, and the effect is that Shivan Dragon gets +1/+0 until end of turn. What this means is that Shivan Dragon's power (attack) goes up by 1. However, his toughness (health) goes up by 0, so it remains unchanged. Hence, Shivan Dragon would have the stats 6/5 after using this ability once (and you would have spent one red mana). This bonus disappears at the end of your turn.</b>
+        <p>Under the keyword ability <em>flying</em>, we see another ability. Activated abilities consist of two parts: a <b>cost</b> and an <b>effect</b>. It's easy to tell them apart: the cost is on the left side of the colon and the effect is on the right side. In this example, the cost of the ability is a single red mana, represented by the red mana symbol, and the effect is that Shivan Dragon gets +1/+0 until end of turn. What this means is that Shivan Dragon's power (attack) goes up by 1. However, his toughness (health) goes up by 0, so it remains unchanged. Hence, Shivan Dragon would have the stats 6/5 after using this ability once (and you would have spent one red mana). This bonus disappears at the end of your turn.</b>
         <b>Important Note:</b> you can use an activated ability as many times per turn as you want (provided you have the mana to pay for it). So you could use Shivan Dragon's ability as much as you have the mana for in any given turn, making him a 7/5, 8/5, or even higher.</p>
 
         <p>The last type of ability we will cover will be mana ability. This is esentially the same as an activated ability, with a cost and an effect, but this study will introduce several key concepts. Here is Elvish Mystic:</p>
 
         <image class="demoCard" src="media/magic card photos/elvish mystic.jpg"></image>
+
+        <p>We can see something that looks like an activated abbility in Elvish Mystic's text box. In the cost, it has the symbol that looks like a sideways arrow. This symbol stands for <em>tap</em>. Here's a closer look.</p>
+
+        <image class="demoImage" src="media/magic related photos/tap symbol.png" alt text="the tap symbol"></image>
+
+        <p>Tap, if you remember, means turning a creature sideways. It usually means that that creature is "used up" for the turn. It is in Elvish Mystic's cost, which means that to use that ability you need to tap him. If a creature is already tapped, you can't tap it again. So, for this ability, Elvish Mystic needs to be untapped. Then you tap him, and the effect of his ability occurs.</p>
+
+        <p>Let's look more closely at this effect. It says add 1 green mana (remember, the tree is the symbol for green mana) to your <strong>mana pool</strong>. When you tap a land for mana, you don't have to spend it right away. It goes to somewhere called a mana pool, where you have mana of different colors waiting around for you to use them. This mana pool empties at different sections during your turn, so you mostly just tap lands for mana when you're going to cast something. So when Elvish Mystic uses his ability, you get 1 green mana, to spend on spells.</p>
+
+        <p>This example introduces some key concepts. First of all, that mana can come from sources other than lands. So, Elvish Mystic can produce mana, that you use to cast spells. There are some other cards that can do this as well. Second of all, the idea that tapping a creature is something in an ability cost. This actually isn't an uncommon thing; many cards require tapping to activate their abilities. And now let's get back to what a <strong>mana ability</strong> is. A mana ability is an ability that produces mana. It's basically an activated ability, but it produces mana. The only reason I included this section is because cards that reference activated abilities don't apply to mana abilities. They work almost exactly the same way, though.</p>
+
+        <p>The last part in a creature's text box we have to talk about is the <strong>flavor text</strong>. It doesn't apply at all to the game, but it can be cool to read. Almost all of the cards we talked about have had flavor text. It's in the way bottom of the card and in italics. Here's an example: </p>
+
+        <image class="demoCard" src="media/magic card photos/khenra charioteer/png" alt text="khenra charioteer"></image>
+
+        <p> The text that says <em>"We do not swerve - Tah-crop charioteer motto"</em> is, in this case, the flavor text. All of the cards we have looked at so far have had flavor text, except for Ancient Silverback. Often, if a card doens't have flavor text it's because the rest, and more important part, of the text box takes too much space.</p>
+
+        <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
+
+        <p>Notice, the large text box results in no space for flavor text</p>
+
+        <p>So, that's it for creatures, probably one of the most complicated yet essential parts of MTG. Now that you know this, let's explore some other, simpler, card types.</p>
 
 
 

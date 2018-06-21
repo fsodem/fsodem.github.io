@@ -5,15 +5,43 @@
     <meta name="viewport" content="width=device-width">
     <title>MTG123 dictionary</title>
     <link rel="stylesheet" type="text/css" href="/css/dictionary.css">
+    <link rel="stylesheet" type="text/css" href="/css/toolbar.css">
     <script type="text/javascript" src="/javascript/dictionary.js"></script>
+    <script type="text/javascript" src="/javascript/dictionaryRune.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
   </head>
   <body>
-    <h2>Dictionary</h2>
-    <div id="term1" class="terms" onclick="showDef1()">Flying</div>
-    <div id="term2" class="terms" onclick="showDef2()">Def 2</div>
-    <div id="term3" class="terms" onclick="showDef3()">Def 3</div>
-    <div id="term4" class="terms" onclick="showDef4()">Def 4</div>
-    <div id="definition">Click on the terms above to see the definition.</div>
-    <script src="dictionary.js"></script>
+    <div class="navigationToolbar">
+      <button class="navigationButton" onclick="window.location.href='/index.html'">Learning the basics</button>
+      <button class="navigationButton" onclick="window.location.href='/dictionary/index.html'">Term dictionary</button>
+      <button class="navigationButton">Avanced rules</button>
+      <button class="navigationButton">To be decided</button>
+    </div>
+    <div id="dictBigDiv">
+      <h2 id="title"> Term dictionary</h2>
+      <div class="termsOnTheLeft">
+
+        <button id="term1" class="terms" onclick="showDef1()">Flying</button>
+        <br/>
+        <button id="term2" class="terms" onclick="showDef2()">Trample</button>
+        <br/>
+        <button id="term3" class="terms" onclick="showDef3()">Deathtouch</button>
+        <br/>
+        <button id="term4" class="terms" onclick="showDef4()">Def 4</button>
+        <br/>
+        <button id="term5" class="terms" onclick="showDef5()">Def 5</button>
+      </div>
+
+      <div class="termsOnTheRight">
+        <div class="terms">testing</div>
+      </div>
+
+      <div id="definition">
+        <script language="javascript" src="/javascript/dictionaryRune.js" type="text/javascript"></script>
+        Click on the terms above to see the definition.
+      </div>
+      <script src="dictionary.js"></script>
+    </div>
+
   </body>
 </html>

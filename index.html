@@ -20,7 +20,16 @@
   </div>
 
   <div id="bigDiv">
-    <h2>Learning MTG: Introduction</h2>
+
+    <div class="navMenuBasicsPage">
+      <button class="basicsPageNavigationButton"><a href="#introSection">Introductory Section</a></button>
+      <button class="basicsPageNavigationButton"><a href="#manaSection">Mana and Lands Section</a></button>
+      <button class="basicsPageNavigationButton"><a href="#playingCardSection">Playing Cards Section</a></button>
+      <button class="basicsPageNavigationButton"><a href="#creatureSection">Creature Section</a></button>
+      <button class="basicsPageNavigationButton"><a href="#enchantmentSection">Enchantment Section</a></button>
+    </div>
+
+    <h2 id="introSection">Learning MTG: Introduction</h2>
     <div class="standardText">
       <p> MTG stands for Magic: The Gathering. It is a trading card game, where each player brings a deck to the table and plays against an opponent. It can be very complicated to learn, but a very rewarding and strategic experience if you do learn to play.</p>
     </div>
@@ -28,7 +37,7 @@
     <div class="standardText">
       <p>Each player starts with 20 health. If your opponent's heath goes to 0, they lose. If all your opponent(s) lose the game, you win If a card would allow you to win by some other means, you win.</p>
     </div>
-    <h2>Mana</h2>
+    <h2 id="manaSection">Mana</h2>
     <div class="standardText">
       <p>Mana is a resource you use to play cards. There are five different types.</p>
       <image class="demoImage" src="media/magic related photos/all mana symbols.png" alt text="The mana symbols"></image>
@@ -36,7 +45,7 @@
         These colors are associated with, respectectively, the lands Plains, Islands, Swamps, Mountains, and Forests. Mana is produced by its respective land.</p>
       </li>
     </div>
-    <h2>Playing Cards:</h2>
+    <h2 id="playingCardSection">Playing Cards:</h2>
     <div class="standardText">
       <ul>
         <li>
@@ -62,25 +71,39 @@
       <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
     </div>
 
-    <h2>Creatures</h2>
+    <h2 id="creatureSection">Creatures</h2>
+    <div class="navMenuBasicsPage">
+      <button class="basicsPageNavigationButton"><a href="#introToCreatures">Introduction to Creatures</a></button>
+      <button class="basicsPageNavigationButton"><a href="#topHalfOfCreaturesExplained">Top half of a creature card</a></button>
+      <button class="basicsPageNavigationButton"><a href="#powerAndToughnessExplained">Power and Tougness</a></button>
+      <button class="basicsPageNavigationButton"><a href="#keywordAbilitiesExplained">Keyword Abilities</a></button>
+      <button class="basicsPageNavigationButton"><a href="#passiveAbilitiesExplained">Passive Abilities</a></button>
+      <button class="basicsPageNavigationButton"><a href="#triggeredAbilitiesExplained">Triggered Abilities</a></button>
+      <button class="basicsPageNavigationButton"><a href="#activatedAbilitiesExplained">Activated Abilities</a></button>
+    </div>
+    <div class="navMenuBasicsPage">
+      <button class="basicsPageNavigationButton"><a href="#manaAbilitiesExplained">Mana Abilities</a></button>
+      <button class="basicsPageNavigationButton"><a href="#creatureRecapQuiz">Recap Quiz</a></button>
+    </div>
+
     <div class="standardText">
-      <p>
+      <p id="introToCreatures">
         Creatures are one of the most important card types in magic, and also one of the more complicated, because they have to engage in combat. Take a look at a creature. We already saw this one - ancient silverback.</p>
 
       <image class="demoCard" src="media/magic card photos/ancient silverback.png" alt text="ancient silverback"></image>
 
-      <p>In the top left-hand corner of a creature, you have its name, and in the top right, its mana cost. These will be present regardless of whether or not this is a creature; they're in every card. Under that, a card's art, and below that, its type.
+      <p id="topHalfOfCreaturesExplained">In the top left-hand corner of a creature, you have its name, and in the top right, its mana cost. These will be present regardless of whether or not this is a creature; they're in every card. Under that, a card's art, and below that, its type.
         In this case, since the silverback is a creature, it says "creature", and then specifies ape. Most card types do not contain this specification, but creatures do. There could be several things, like "goblin shaman" or "human warrior". In this
         case, however, it just says "ape". To the far right of that section is the set symbol. It isn't really important in terms of the game. It's color is different depending on how rare it is and the symbol is different depending on when it was released
         but this doesn't really matter for the game.</p>
 
-      <p> We're going to skip the center section to go down to the bottom for a second. On the bottom, you can see the artist's name on the left. The really important part, however, is the far right; The two numbers separated by a slash. These two numbers are a creature's <strong>power and toughness</strong>. These are the creature's attack power (power) and health (toughness). <b>Important:</b> attack (Power) is always on the <i>left</i> and health (toughness) is always on the <i>right</i>. Damage in MTG is different from damage in other games. Damage in MTG lasts until the end of the turn, then it goes away. That means that if you want to kill a creature, you have to do it in a single turn, or it'll just recover when the turn is over.
+      <p id="powerAndToughnessExplained"> We're going to skip the center section to go down to the bottom for a second. On the bottom, you can see the artist's name on the left. The really important part, however, is the far right; The two numbers separated by a slash. These two numbers are a creature's <strong>power and toughness</strong>. These are the creature's attack power (power) and health (toughness). <b>Important:</b> attack (Power) is always on the <i>left</i> and health (toughness) is always on the <i>right</i>. Damage in MTG is different from damage in other games. Damage in MTG lasts until the end of the turn, then it goes away. That means that if you want to kill a creature, you have to do it in a single turn, or it'll just recover when the turn is over.
       Look again at our ape. He has toughness 5, which means that to kill him you need to do five damage in one turn. If a creature takes damage greater than or equal to its toughness (aka if it ever goes to 0 or lower health), it dies immediately.
       Power is the damage a creature does. This damage is the same whether the damage is to players or creatures. While we're not going to get into combat right now, know that a creature's <strong>power</strong> is its attack and its <strong>toughness</strong> is its health.</p>
 
       <p>MTG player sometimes refer to a creature by using its power and toughness. For example, a MTG player might say about Ancient Silverback "It's a 6/5". This sounds like six-five and is a very commonly used sort of MTG slang.</p>
 
-      <p>Now lets go back up to the big square of text under the image. This is a creature's <strong>text box</strong>, and its the most complicated part of a creatures, and possibly the most important. It's what differentiates it from all of the other creatures
+      <p id="keywordAbilitiesExplained">Now lets go back up to the big square of text under the image. This is a creature's <strong>text box</strong>, and its the most complicated part of a creatures, and possibly the most important. It's what differentiates it from all of the other creatures
         in MTG history. There are a few different kinds of things that can go in a text box. First off, a keyword ability.</p>
 
       <image class="demoCard" src="media/magic card photos/shivan dragon.png" alt text="shivan dragon"></image>
@@ -89,15 +112,15 @@
 
       <image class="demoCard" src="media/magic card photos/khenra charioteer.png" alt text="khenra charioteer"></image>
 
-      <p>Another thing khenra charioteer can teach us is about <strong>passive abilities</strong>. Under its keyword ability, khenra charioteer has a text that says "Other creatures you control have trample". This is a passive ability: it takes place all the time, regardless of whether you do something or not. Its effect is giving all of your creatures the keyword ability  <strong>trample</strong> (what that ability does is not important right now). Most keyword abilities are passive abilities that just happen to be found on many cards.</p>
+      <p id="passiveAbilitiesExplained">Another thing khenra charioteer can teach us is about <strong>passive abilities</strong>. Under its keyword ability, khenra charioteer has a text that says "Other creatures you control have trample". This is a passive ability: it takes place all the time, regardless of whether you do something or not. Its effect is giving all of your creatures the keyword ability  <strong>trample</strong> (what that ability does is not important right now). Most keyword abilities are passive abilities that just happen to be found on many cards.</p>
 
-      <p>Passive abilities can take a few forms. Here, we're going to show an example of a <strong>triggered ability</strong>. This is a passive ability in the sense that you don't have to do anything to activate it, but is different in the sense that it isn't a continuous effect - rather, it happens everytime a certain thing happens (specified in the ability). Soul warden, for example, is a simple yet very good example of a (passive) triggered ability.</p>
+      <p id="triggeredAbilitiesExplained">. Here's another type of ability. A <strong>triggered ability</strong>. This is a like a passive ability in the sense that you don't have to do anything to activate it, but is different in the sense that it isn't a continuous effect - rather, it happens everytime a certain thing happens (specified in the ability). Soul warden, for example, is a simple yet very good example of a triggered ability.</p>
 
       <image class="demoCard" src="media/magic card photos/soul warden.png" alt text="soul warden"></image>
 
       <p>What it says is that whenever a creature enters the <strong>battlefield</strong>, you gain 1 life. You start at 20 life, and when your life goes to 0 you lose. Battlefield is MTG speak for playing field. This ability costs you nothing when it triggers, but only triggers sometimes. It is a triggered ability.</p>
 
-      <p>Activated Abilities:<br/>
+      <p id="activatedAbilitiesExplained">Activated Abilities:<br/>
         Activated abilities are probably the most complex kind of ability in Magic: the Gathering. They work differently than the other abilities we talked about before in that they have a <b>cost</b>. In fact, we've already looked at cards with said activated abilities. Let's jump back to one: Shivan Dragon </p>
 
         <image class="demoCard" src="media/magic card photos/shivan dragon.png" alt text="shivan dragon"></image>
@@ -105,7 +128,7 @@
         <p>Under the keyword ability <em>flying</em>, we see another ability. Activated abilities consist of two parts: a <b>cost</b> and an <b>effect</b>. It's easy to tell them apart: the cost is on the left side of the colon and the effect is on the right side. In this example, the cost of the ability is a single red mana, represented by the red mana symbol, and the effect is that Shivan Dragon gets +1/+0 until end of turn. What this means is that Shivan Dragon's power (attack) goes up by 1. However, his toughness (health) goes up by 0, so it remains unchanged. Hence, Shivan Dragon would have the stats 6/5 after using this ability once (and you would have spent one red mana). This bonus disappears at the end of your turn.</b>
         <b>Important Note:</b> you can use an activated ability as many times per turn as you want (provided you have the mana to pay for it). So you could use Shivan Dragon's ability as much as you have the mana for in any given turn, making him a 7/5, 8/5, or even higher.</p>
 
-        <p>The last type of ability we will cover will be mana ability. This is esentially the same as an activated ability, with a cost and an effect, but this study will introduce several key concepts. Here is Elvish Mystic:</p>
+        <p id="manaAbilitiesExplained">The last type of ability we will cover will be mana ability. This is esentially the same as an activated ability, with a cost and an effect, but this study will introduce several key concepts. Here is Elvish Mystic:</p>
 
         <image class="demoCard" src="media/magic card photos/elvish mystic.jpg"></image>
 
@@ -132,17 +155,27 @@
         <p>If you want, you can take a recap quiz and figure out what you learned.</p>
 
 
-          <iframe id="creatureRecapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSdnxmOLRLObQjX94B-OxGoZ38Zn4GGAWMkTuwXO7U_1bzjNMg/viewform?embedded=true" ></iframe>
+          <iframe id="creatureRecapQuiz" class="recapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSdnxmOLRLObQjX94B-OxGoZ38Zn4GGAWMkTuwXO7U_1bzjNMg/viewform?embedded=true" ></iframe>
 
         <p>So, that's it for creatures, probably one of the most complicated yet essential parts of MTG. Now that you know this, let's explore some other, simpler, card types.</p>
       </div>
-      <h2>Enchantments</h2>
-      <div class="standardText">
-        <p>Enchantments are another class of card in MTG, and they are, at their base, relatively simple. An enchantment is, like creatures and lands, a <strong>permanent</strong>. A permanent is a card that stays on the battlefield, instead of simply being cast and then going away. We'll see examples of card like <i>that</i> a few sections later. Anyhow, an enchantment is probably the simplest kind of permanent. Here is an example of a simple enchantment:</p>
+
+      <h2 id="enchantmentSection">Enchantments</h2>
+      <div class="navMenuBasicsPage">
+        <button class="basicsPageNavigationButton"><a href="#introToEnchantments">Introduction to Enchantments</a></button>
+        <button class="basicsPageNavigationButton"><a href="#abilitiesOnEnchantments">Abilities on enchantments </a></button>
+        <button class="basicsPageNavigationButton"><a href="#enchantmentCreaturesExplained">Enchantment Creatures</a></button>
+        <button class="basicsPageNavigationButton"><a href="#enchantmentAurasExplained">Enchantment Auras</a></button>
+        <button class="basicsPageNavigationButton"><a href="#enchantmentRecapQuiz">Recap QuiZ</a></button>
+      </div>
+
+<div class="standardText">
+        <p id="introToEnchantments">Enchantments are another class of card in MTG, and they are, at their base, relatively simple. An enchantment is, like creatures and lands, a <strong>permanent</strong>. A permanent is a card that stays on the battlefield, instead of simply being cast and then going away. We'll see examples of card like <i>that</i> a few sections later. Anyhow, an enchantment is probably the simplest kind of permanent. Here is an example of a simple enchantment:</p>
 
         <image class="demoCard" src="media/magic card photos/greater auramancy.jpg" alt text="greater auramancy"></image>
 
-        <p>While greater auramancy, at first glance, looks a lot like a creature card, there are a few key differences. First, observe the bar between the image and the text box on the card. It says "enchantment". Just about every card has this card type indicator and it is very handy. Notice, however, that there is no specification. For normal enchantments, there is no specification after the word enchantment. Also note that an enchantment doesn't have power or toughness. Only creatures have those. Enchantments also almost never have Keyword abilities. They can, however, have all the other kinds of abilities. Enchantments also have flavor text, same as creatures. Below is an example of an enchantment with a triggered ability, an activated ability, and a passive ability.</p>
+        <p>While greater auramancy, at first glance, looks a lot like a creature card, there are a few key differences. First, observe the bar between the image and the text box on the card. It says "enchantment". Just about every card has this card type indicator and it is very handy. Notice, however, that there is no specification. For normal enchantments, there is no specification after the word enchantment. Also note that an enchantment doesn't have power or toughness. Only creatures have those. Enchantments also almost never have Keyword abilities. They can, however, have all the other kinds of abilities. Enchantments also have flavor text, same as creatures.</p>
+        <p id="abilitiesOnEnchantments">Below is an example of an enchantment with a triggered ability, an activated ability, and a passive ability.</p>
 
         <image class="demoCard" src="media/magic card photos/kindred boon.jpg" alt text="kindred boon"></image>
 
@@ -150,21 +183,38 @@
 
         <p>So far enchantments seem pretty simple. Where things get complicated, however, is the two special types of enchantments: enchantment creatures and enchantment <strong>auras</strong>.</p>
 
-        <p><strong><ins>Enchantment Creatures: </strong></ins><br/>
+        <p id="enchantmentCreaturesExplained"><strong><ins>Enchantment Creatures: </strong></ins><br/>
         Enchantment creatures are actually pretty simple: they work exactly like creatures, except they're also affected by things that affect enchantments. Say I had a card that allowed me to destroy an enchantment, but didn't specifically let me destroy a creature. I could still destroy an enchantment creature. However, if you have a card that gets stronger the more enchantments you have, enchantment creatures count.</p>
 
         <image class="demoCard" src="media/magic card photos/nyx-fleece ram.jpg" alt text="nyx-fleece ram"></image>
 
         <p>A way to tell you're dealing with an enchantment creature is the glowy stardust effect around the border. Also, look where it normally says creature. It says "enchantment creature". That's to help you figure out what card type it is. <br/>
         <b>Side note specific to this example:</b><br/>
-        We can see that Nyx-Fleece Ram's power(attack) is 0. That's actually totally fine. A creature can have power 0, it jsut won't dealy any damage. If a creature ever has toughness 0, though, it dies immediately.</p>
+        We can see that Nyx-Fleece Ram's power(attack) is 0. That's actually totally fine. A creature can have power 0, it just won't deal any damage. If a creature ever has toughness 0, though, it dies immediately.</p>
+
+        <p id=enchantmentAurasExplained><strong><ins>Enchantment Auras: </strong></ins><br/>
+          Enchantment auras are the final and most complicated type of enchantment. They are so complicated because they attach to something. Let's take a look at one; Angelic Gift:</p>
+
+          <image class="demoCard" src="media/magic card photos/angelic gift.png" alt text="angelic gift"></image>
+
+          <p>This card seems identical to a normal enchantment, in all but a few respects. First of all, where the card type (enchantment) is shown, there <i>is</i> a specification. We see it specifies "aura", which is the type of card we are talking about. Also, the first line of text says "Enchant Creature".<br/>
+          The crucial thing to understand about auras is that they attach to something. An aura can't be played on its own. If you play an aura and there isn't anything to attach it to it goes away immediately. Here we can see that it says "Enchant creature". What this means is that you would attach this aura to a creature</p>
+
+          <p>In practice, you often put the aura on top or under the creature card, but slightly offset (so you can still see the card underneath). This would help you remember that the aura applies to this particular creature. An aura always exerts an effect on a creature. In this case, it gives the creature it is attached to +1/+1 and flying. What this means is that the creature's power and toughness stats would each be raised by one, as we have +1 for the power and +1 fpr the toughness. This aura would also apply the Keyword "flying"
+          to the creature it is attached to. This aura also has a triggered ability that causes you to draw a card when you play it.</p>
+
+          <p>Auras can also affect players, not just creatures. Here is an example of an aura that affects a player: </p>
+
+          <image class="demoCard" src="media/magic card photos/curse of death's hold.jpg" alt text="curse of death's hold"></image>
+
+          <p>Here, notcice that an additional specification is made; this is not simply an "aura", this is an "aura curse". This is only important because some cards refer specifically to curses. Other than that, it has no effect. What does, however, make this very different than a normal aura, is that where it normally says "enchant creature", it here says "enchant player". This means that it attaches specifically to a player, and that it's effect is directly directed at the player. Any effect on creatures happens through the player (in this case, the creatures are affected but it's the player who is enchanted).</p>
+
+          <p> Now see what you learned by taking this quiz!</p>
+
+          <iframe id="enchantmentRecapQuiz" class="recapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSc7m6a1F58XDIMPpibwTRHxr8gzITLmpSJ14ReSv1T2wlFchQ/viewform?embedded=true"></iframe>
 
 
-
-
-
-
-      <h2>The turn:</h2> A turn in MTG has many phases. Here they are, in order.
+  <h2>The turn:</h2> A turn in MTG has many phases. Here they are, in order.
       <ul>
         <li>The untap step. When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn. During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
         <li>The Upkeep. Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during

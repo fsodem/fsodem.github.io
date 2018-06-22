@@ -1,10 +1,10 @@
 let r = new Rune({
-  container: "#dictionary",
+  container: "#rune1",
   width: 300,
   height: 200
 })
 
-r.square(0, 0, 50, 50);
+r.rect(0, 0, 50, 50);
 
 
 r.draw()

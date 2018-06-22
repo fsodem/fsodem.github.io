@@ -8,6 +8,9 @@
   <link rel="stylesheet" type="text/css" href="css/style.css" />
   <link rel="stylesheet" type="text/css" href="css/toolbar.css"
   <script type="text/javascript" src="javascript/sketch.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.min.js"></script>
 </head>
 
 <body>
@@ -22,11 +25,12 @@
   <div id="bigDiv">
 
     <div class="navMenuBasicsPage">
-      <button class="basicsPageNavigationButton"><a href="#introSection">Introductory Section</a></button>
-      <button class="basicsPageNavigationButton"><a href="#manaSection">Mana and Lands Section</a></button>
-      <button class="basicsPageNavigationButton"><a href="#playingCardSection">Playing Cards Section</a></button>
-      <button class="basicsPageNavigationButton"><a href="#creatureSection">Creature Section</a></button>
-      <button class="basicsPageNavigationButton"><a href="#enchantmentSection">Enchantment Section</a></button>
+      <button class="basicsPageNavigationButton"><a href="#introSection">Introduction</a></button>
+      <button class="basicsPageNavigationButton"><a href="#manaSection">Mana and Lands</a></button>
+      <button class="basicsPageNavigationButton"><a href="#playingCardSection">Playing Cards</a></button>
+      <button class="basicsPageNavigationButton"><a href="#creatureSection">Creatures</a></button>
+      <button class="basicsPageNavigationButton"><a href="#enchantmentSection">Enchantments</a></button>
+      <button class="basicsPageNavigationButton"><a href="#artifactSection">Artifacts</a></button>
     </div>
 
     <h2 id="introSection">Learning MTG: Introduction</h2>
@@ -212,6 +216,29 @@
           <p> Now see what you learned by taking this quiz!</p>
 
           <iframe id="enchantmentRecapQuiz" class="recapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSc7m6a1F58XDIMPpibwTRHxr8gzITLmpSJ14ReSv1T2wlFchQ/viewform?embedded=true"></iframe>
+        </div>
+
+        <h2 id="artifactSection">Artifacts</h2>
+        <div class="navMenuBasicsPage">
+          <button class="basicsPageNavigationButton"><a href="#introToArtifacts">Introduction to Artifacts</a></button>
+          <button class="basicsPageNavigationButton"><a href="#artifactCreaturesExplained">Artifact Creatures</a></button>
+          <button class="basicsPageNavigationButton"><a href="#artifactEquipmentsExplained">Artifact Equipments</a></button>
+        </div>
+
+        <div class="standardText">
+          <p id="introToArtifacts">3gArtifacts are another class of magic cards. They are like enchantments in the sense that they are permanents, with a mana cost, card type, and no power or tougness. Here's an example of an artifact: </p>
+
+          <image class="demoCard" src="media/magic card photos/mirage mirror.jpg" alt text="mirage mirror"></image>
+
+          <p>Artifacts function very similarly to enchantments. They are permanents (cards that stay on the field), and they can have activated, passive, and triggered abilities (the card above has an activated ability). They can also have mana and keyword abilities but again, like with enchantments, this is rare. Artifacts are similar to enchantments in one more respect:</p>
+
+          <p id="artifactCreaturesExplained"><strong>Artifact Creatures: </strong><br/>
+            Artifact creatures work pretty much like enchantment creatures. Effects that apply to both creatures and artifacts affect them. We'll look at an example of one, but we're going to burn through this section because it's pretty simple, especially since we already saw enchantment creatures. Anyways, here's a simple artifact creature: </p>
+
+            <image class="demoCard" src="media/magic card photos/field creeper.jpg" alt text="field creeper"></image>
+
+            <p id="artifactEquipmentsExplained">Artifact equipments are the aura equivalent for enchantments.</p>
+
 
 
   <h2>The turn:</h2> A turn in MTG has many phases. Here they are, in order.

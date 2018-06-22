@@ -64,7 +64,7 @@ h2 {
 .basicsPageNavigationButton {
   margin-left: 3%;
   height: 80%;
-  width: 10%;
+  width: 15%;
   border-radius: 20%;
   border-style: none;
   background-color: #778ca3;
@@ -82,6 +82,7 @@ h2 {
   background-color: #a5b1c2;
   width: 100%;
   height: 60px;
+  padding: 6px;
 }
 
 a:link {
@@ -89,5 +90,11 @@ a:link {
 }
 
 a:visited {
-  color: #4b6584;
+  color: black;
+}
+
+#p5sketch {
+  width: 600px;
+  height: 600px;
+  margin: auto;
 }

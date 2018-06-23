@@ -30,6 +30,8 @@
       <button class="basicsPageNavigationButton"><a href="#playingCardSection">Playing Cards</a></button>
       <button class="basicsPageNavigationButton"><a href="#creatureSection">Creatures</a></button>
       <button class="basicsPageNavigationButton"><a href="#enchantmentSection">Enchantments</a></button>
+    </div>
+    <div class="navMenuBasicsPage">
       <button class="basicsPageNavigationButton"><a href="#artifactSection">Artifacts</a></button>
     </div>
 
@@ -204,14 +206,16 @@
           <p>This card seems identical to a normal enchantment, in all but a few respects. First of all, where the card type (enchantment) is shown, there <i>is</i> a specification. We see it specifies "aura", which is the type of card we are talking about. Also, the first line of text says "Enchant Creature".<br/>
           The crucial thing to understand about auras is that they attach to something. An aura can't be played on its own. If you play an aura and there isn't anything to attach it to it goes away immediately. Here we can see that it says "Enchant creature". What this means is that you would attach this aura to a creature</p>
 
-          <p>In practice, you often put the aura on top or under the creature card, but slightly offset (so you can still see the card underneath). This would help you remember that the aura applies to this particular creature. An aura always exerts an effect on a creature. In this case, it gives the creature it is attached to +1/+1 and flying. What this means is that the creature's power and toughness stats would each be raised by one, as we have +1 for the power and +1 fpr the toughness. This aura would also apply the Keyword "flying"
+          <p>In practice, you often put the aura on top or under the creature card, but slightly offset (so you can still see the card underneath). This would help you remember that the aura applies to this particular creature. An aura always exerts an effect on a creature if it's attached to one. The creature it affects is called the "enchanted creature". In this case, this aura gives the enchantd creature +1/+1 and flying. What this means is that the creature's power and toughness stats would each be raised by one, as we have +1 for the power and +1 fpr the toughness. This aura would also apply the Keyword "flying"
           to the creature it is attached to. This aura also has a triggered ability that causes you to draw a card when you play it.</p>
 
           <p>Auras can also affect players, not just creatures. Here is an example of an aura that affects a player: </p>
 
           <image class="demoCard" src="media/magic card photos/curse of death's hold.jpg" alt text="curse of death's hold"></image>
 
-          <p>Here, notcice that an additional specification is made; this is not simply an "aura", this is an "aura curse". This is only important because some cards refer specifically to curses. Other than that, it has no effect. What does, however, make this very different than a normal aura, is that where it normally says "enchant creature", it here says "enchant player". This means that it attaches specifically to a player, and that it's effect is directly directed at the player. Any effect on creatures happens through the player (in this case, the creatures are affected but it's the player who is enchanted).</p>
+          <p>In this specific case, notice that an additional specification is made; this is not simply an "aura", this is an "aura curse". This is only important because some cards refer specifically to curses. Other than that, it has no effect. This is not necessary for an aura to enchant a player. What does, however, make this very different than a normal aura, is that where it normally says "enchant creature", it here says "enchant player". This means that it attaches specifically to a player, and that it's effect is directly directed at the player. Any effect on creatures happens through the player (in this case, the creatures are affected but it's the player who is enchanted).<br/>
+          When the creature, player, or other card an aura is affected leaves the battlefield (playing field) for any reason, the aura is immediately destroyed. It doesn't switch to another card, it's just destroyed.
+          </p>
 
           <p> Now see what you learned by taking this quiz!</p>
 
@@ -223,10 +227,11 @@
           <button class="basicsPageNavigationButton"><a href="#introToArtifacts">Introduction to Artifacts</a></button>
           <button class="basicsPageNavigationButton"><a href="#artifactCreaturesExplained">Artifact Creatures</a></button>
           <button class="basicsPageNavigationButton"><a href="#artifactEquipmentsExplained">Artifact Equipments</a></button>
+          <button class="basicsPageNavigationButton"><a href="#artifactRecapQuiz">Recap Quiz</a></button>
         </div>
 
         <div class="standardText">
-          <p id="introToArtifacts">3gArtifacts are another class of magic cards. They are like enchantments in the sense that they are permanents, with a mana cost, card type, and no power or tougness. Here's an example of an artifact: </p>
+          <p id="introToArtifacts">Artifacts are another class of magic cards. They are like enchantments in the sense that they are permanents, with a mana cost, card type, and no power or tougness. Here's an example of an artifact: </p>
 
           <image class="demoCard" src="media/magic card photos/mirage mirror.jpg" alt text="mirage mirror"></image>
 
@@ -237,7 +242,21 @@
 
             <image class="demoCard" src="media/magic card photos/field creeper.jpg" alt text="field creeper"></image>
 
-            <p id="artifactEquipmentsExplained">Artifact equipments are the aura equivalent for enchantments.</p>
+            <p id="artifactEquipmentsExplained"><strong>Artifact equipments</strong> are to artifacts what auras are to enchantments, in more than just one way.<br/>
+            They are a more complicated version of a relatively simple card type, and specify that in their card type box. Observe the card below; it says "Artifact - Equipment" in the card type indicator. This is very similar to what there is with auras, with "Enchantment - Aura" being specified.</p>
+
+              <image class="demoCard" src="media/magic card photos/trusty machete.jpg" alt text="trust machete"></image>
+
+            <p>Equipments do, however, have a few key differences from auras. How an equipment works is that, when you play it, it just sits on the battlfield. Remember, an aura immediately attaches to something when you play it - an equipment doesn't. They, unlike auras, have the ability to "survive on their own", whithout a host. But let's say I want to attach an equipment to something. Well, it has something called an <strong>equip cost</strong>. In this case, you would have to pay one generic mana to attach trusty machete to a creature. Equip costs, however, can be almost anything. Treat "Equip" as an activated ability, which has a cost, listed on the card, and an effect, which is to attach it to a creature. When an equipment is attached to a creature, it gives a bonus to the creature it is attached to, called "equipped creature". In this case, giving a +2 bonus to power and a +1 bonus to toughness, written +2/+1.</p>
+
+            <p>Here comes the other big difference as compared to auras. When the equipped creature leaves the battlefield, say, for example, it died, the equipment hangs around. It isn't attached to anything yet, but you can equip it to a creature later. You can also do this while the creature it's equipped to is still there - pay the mana and move the equipment from one creature to another.</p>
+
+            <p>In these ways, we've seen how equipments are at the same time similar, yet different, to auras.<br/>
+            Now take the recap quiz and figure out what you learned</p>
+
+            <iframe class="recapQuiz" id="artifactRecapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSeLNB-34Pmyc4C5QXlksom8buwmDxsgSyuhyISPuIoAYamUFQ/viewform?embedded=true"></iframe>
+
+
 
 
 

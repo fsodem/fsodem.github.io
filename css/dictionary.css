@@ -8,7 +8,7 @@ html {
   text-align: center;
   width: 80%;
   margin-top: 0px;
-  height: 500px;
+  height: 800px;
 }
 
 #title {
@@ -36,29 +36,26 @@ html {
 #definition {
   width: 300px;
   height: 300px;
-  margin-top: 5px;
   border-radius: 20px;
-  border: black;
-  border-style: solid;
+  border: solid black;
   padding: 10px;
   /* background-color: rgba(209, 216, 224, 0.2); */
   background-color: rgba(119, 140, 163, 1.0);
-  margin: auto;
+  margin-left: 12.5%;
+  float: left;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
 }
 
 .termsOnTheLeft {
   margin-left: 3%;
-  width: 40%;
-  height: 300px;
+  width: 20%;
   float: left;
 }
 
 .termsOnTheRight {
-  margin-left: 57%;
-  width: 40%;
-  height: 300px;
+  margin-left: 77%;
+  width: 20%;
 }
 
 .terms:hover {

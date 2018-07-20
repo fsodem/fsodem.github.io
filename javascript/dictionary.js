@@ -44,7 +44,22 @@ function showDef1_9() {
 }
 
 function showDef1_10() {
-  const definition = "Landwalk is not itself an ability. It is the name of an ability with many variants. One for each type of basic land - Forest, Plains, Mountain, Island, Swamp. So, the name of the abilities you will see on the cards is Forestwalk, Plainswalk, Mountainwalk, Islandwalk, Swampwalk. This creature can't be blocked by if defending player controls a ______. So, if the defending player controls a land of the type mentioned in the ability's name, the creature becomes unblockable."
+  const definition = "Landwalk is not itself an ability. It is the name of an ability with many variants. One for each type of basic land - Forest, Plains, Mountain, Island, Swamp. So, the name of the abilities you will see on the cards is Forestwalk, Plainswalk, Mountainwalk, Islandwalk, Swampwalk. This creature can't be blocked by if defending player controls a land of the type in the name of the ability. So, if the defending player controls a land of the type mentioned in the ability's name, the creature becomes unblockable."
+  document.getElementById("definition").innerHTML = definition;
+}
+
+function showDef1_11() {
+  const definition = "Whenever you cast a noncreature spell, this creature gets +1/+1 until end of turn. So, whenever you play a spell that isn't a creature, so if you play anything that isn't a land or a creature, the creature gets a +1/+1 boost until the end of the turn. Note: this boost can stack, depending on how many spells you play to cause it to trigger."
+  document.getElementById("definition").innerHTML = definition;
+}
+
+function showDef1_12() {
+  const definition = "You may cast this spell anytime when you could cast an instant. You can cast this spell, usually a permanent which can only be cast during your main phase. Note: flash can effect any permanent, not just creatures."
+  document.getElementById("definition").innerHTML = definition;
+}
+
+function showDef1_13() {
+  const definition = "This creature can't attack."
   document.getElementById("definition").innerHTML = definition;
 }
 

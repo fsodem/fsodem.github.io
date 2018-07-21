@@ -44,7 +44,7 @@ function showDef1_9() {
 }
 
 function showDef1_10() {
-  const definition = "Landwalk is not itself an ability. It is the name of an ability with many variants. One for each type of basic land - Forest, Plains, Mountain, Island, Swamp. So, the name of the abilities you will see on the cards is Forestwalk, Plainswalk, Mountainwalk, Islandwalk, Swampwalk. This creature can't be blocked by if defending player controls a land of the type in the name of the ability. So, if the defending player controls a land of the type mentioned in the ability's name, the creature becomes unblockable."
+  const definition = "Landwalk is not itself an ability. It is the name of an ability with many variants. One for each type of basic land - Forest, Plains, Mountain, Island, Swamp. So, the name of the abilities you will see on the cards is Forestwalk, Plainswalk, Mountainwalk, Islandwalk, Swampwalk. This creature can't be blocked if defending player controls a land of the type in the name of the ability. For example, a creature with Islandwalk would be unblockable if the defending player controlled an island."
   document.getElementById("definition").innerHTML = definition;
 }
 

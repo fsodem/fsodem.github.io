@@ -35,6 +35,7 @@
     <div class="navMenuBasicsPage">
       <button class="basicsPageNavigationButton"><a href="#artifactSection">Artifacts</a></button>
       <button class="basicsPageNavigationButton"><a href="#instantAndSorcerySection">Instants and Sorceries</a></button>
+      <button class="basicsPageNavigationButton"><a href="#theTurnSection">The turn</a></button>
     </div>
 
     <h2 id="introSection">Learning MTG: Introduction</h2>
@@ -298,13 +299,39 @@
 
 
 
-  <h2>The turn:</h2> A turn in MTG has many phases. Here they are, in order.
-      <ul>
-        <li>The untap step. When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn. During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
-        <li>The Upkeep. Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during
+      <h2 id="theTurnSection">The turn:</h2>
+      <div class="standardText"
+        <p>A turn in MTG has many phases. Here they are, in order.</p>
+        <ul>
+          <li>The untap step.
+          <br/>
+          When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn. During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
+          <li>The Upkeep.
+          <br/>
+          Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during
           this phase.</li>
-        <li>The Draw Phase. At the start of this phase, you draw a card from your <ins>library</ins>, and you put it in your hand. Library is MTG speak for deck.</li>
-        <li>First Main Phase. During this turn, you play cards from your hand. </li>
+          <li>The Draw Phase.
+          <br/>
+          At the start of this phase, you draw a card from your <ins>library</ins>, and you put it in your hand. Library is MTG speak for deck.</li>
+          <li>First Main Phase.
+          <br/>
+          During this turn, you play cards from your hand. You can play one land per turn, and it is during your main phase that you play it. Just about every other card type can also only be played during your main phase. Instants, however, are the exception. You can play instants whenever you want, including during the upkeep or untap step, or even the attack step.</li>
+          <li>The Attack phase.
+          <br/>
+          The attack phase is a very important phase, as it is often during this phase that players take damage and creatures die. The attack phase follows a very specific order. Here are the steps:
+          <ol>
+            <li>Declare attackers:
+            <br/>
+            The player whose turn it is declares how many creature he wants to attack with and which creatures he wants to attack. This player can choose to attack with no creatures, which means the rest of this phase does not happen. However, effects that happen during the attack phase still happen, so the phase is technically not skipped. Any creatures that are attacking tap, unless they have vigilance. </li>
+            <li>Declare blockers:
+            <br/>
+            The player who is being attacked, the <strong>defending player</strong>, picks how many creatures he wants to block with, and which creatures he wants to block. He can block all of the creatures or none of the creatures, and each attacking creature can be blocked by as many creatures as the defending player wants. So, if the defending player gets attacked by three creatures, he can block one of the attackers with one creature, one of the attackers with four creatures, and let the other attacker go through for damage.</li>
+            <li>Damage:
+            <br/>
+            Then, damage is dealt. Remember, creatures with first strike do damage before creatures without it. Any creatures not blocked do an amount of damage equal to their power(number on the left) to the defending player, reducing his health total by that many points. If there is one creature blocking one creature, what happens is simple. They both deal damage equal to their power to each other. If it is enough to kill one or both of them, those creatures die. If there are several creatures blocking a single creature, then the damage of all of the different creatures is added up against the lone one, but the lone creature's power must be spread out against all of the different creatures. Then, combat is over.</li>
+          </ol>
+        </li>
+      </div>
     </div>
 </body>
 

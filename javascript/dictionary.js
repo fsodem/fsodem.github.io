@@ -67,3 +67,8 @@ function showDef2_1() {
   const definition = "Sacrificing a creature is chosing a creature you control and immediately killing it, sacrificing it. Usually, you sacrifice a creature as a cost for some benefit, or you do it because of an effect an opponent has used on you. Note: You choose which creature to sacrifice, even if an opponent used an effect which caused you to sacrifice a creature. "
   document.getElementById("definition").innerHTML = definition;
 }
+
+function showDef2_2() {
+  const definition = "Your library is your deck. Some cards will tell you to search your library, which means you search through your deck. Cards that tell you to draw almost never specify that you draw from the library, but all drawing of cards is done from your library. The order of a library is very important, and it should never be shuffled, mixed up, or looked through unless one is specifically told to do so."
+  document.getElementById("definition").innerHTML = definition;
+}

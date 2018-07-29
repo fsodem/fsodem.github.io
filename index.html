@@ -36,6 +36,7 @@
       <button class="basicsPageNavigationButton"><a href="#artifactSection">Artifacts</a></button>
       <button class="basicsPageNavigationButton"><a href="#instantAndSorcerySection">Instants and Sorceries</a></button>
       <button class="basicsPageNavigationButton"><a href="#theTurnSection">The turn</a></button>
+      <button class="basicsPageNavigationButton"><a href="#playingTheGameSection">Playing the Game</a></button>
     </div>
 
     <h2 id="introSection">Learning MTG: Introduction</h2>
@@ -107,7 +108,7 @@
         but this doesn't really matter for the game.</p>
 
       <p id="powerAndToughnessExplained"> We're going to skip the center section to go down to the bottom for a second. On the bottom, you can see the artist's name on the left. The really important part, however, is the far right; The two numbers separated by a slash. These two numbers are a creature's <strong>power and toughness</strong>. These are the creature's attack power (power) and health (toughness). <b>Important:</b> attack (Power) is always on the <i>left</i> and health (toughness) is always on the <i>right</i>. Damage in MTG is different from damage in other games. Damage in MTG lasts until the end of the turn, then it goes away. That means that if you want to kill a creature, you have to do it in a single turn, or it'll just recover when the turn is over.
-      Look again at our ape. He has toughness 5, which means that to kill him you need to do five damage in one turn. If a creature takes damage greater than or equal to its toughness (aka if it ever goes to 0 or lower health), it dies immediately.
+      Look again at our ape. He has toughness 5, which means that to kill him you need to do five damage in one turn. If a creature takes damage greater than or equal to its toughness (aka if it ever goes to 0 or lower health), it dies immediately. When a creature dies, it goes to the <strong>graveyard</strong>, which is MTG speak for discard pile.
       Power is the damage a creature does. This damage is the same whether the damage is to players or creatures. While we're not going to get into combat right now, know that a creature's <strong>power</strong> is its attack and its <strong>toughness</strong> is its health.</p>
 
       <p>MTG player sometimes refer to a creature by using its power and toughness. For example, a MTG player might say about Ancient Silverback "It's a 6/5". This sounds like six-five and is a very commonly used sort of MTG slang.</p>
@@ -293,7 +294,7 @@
 
             <p id="instantAndSorceryRecapQuiz">Now, you can take this recap quiz and figure out what you learned.</p>
 
-            <iframe class="recapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSct5uv_pe4_V_qtUQ1LFBtP20HJj76REm5nG7j9M1vxYkjgPA/viewform?embedded=true"></iframe>
+            <iframe class="recapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSct5uv_pe4_V_qtUQ1LFBtP20HJj76REm5nG7j9M1vxYkjgPA/viewform?embedded=true" ></iframe>
 
           </div>
 
@@ -304,34 +305,65 @@
         <p>A turn in MTG has many phases. Here they are, in order.</p>
         <ul>
           <li>The untap step.
-          <br/>
-          When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn. During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
+            <br/>
+            When you use cards, they becomed tapped, which means they are turned sideways, to represent that they have been used for the turn. During this step, you turn all your cards forward again, to show that they are ready to use again.</li>
           <li>The Upkeep.
-          <br/>
-          Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during
-          this phase.</li>
+            <br/>
+            Normally, nothing happens during this step. However, it's used to mark the start of a turn. For example, it a card wants something to happen at the start of your turn. it'll say "at the beginning of your upkeep", which means during
+            this phase.</li>
           <li>The Draw Phase.
-          <br/>
-          At the start of this phase, you draw a card from your <ins>library</ins>, and you put it in your hand. Library is MTG speak for deck.</li>
+            <br/>
+            At the start of this phase, you draw a card from your <ins>library</ins>, and you put it in your hand. Library is MTG speak for deck.</li>
           <li>First Main Phase.
-          <br/>
-          During this turn, you play cards from your hand. You can play one land per turn, and it is during your main phase that you play it. Just about every other card type can also only be played during your main phase. Instants, however, are the exception. You can play instants whenever you want, including during the upkeep or untap step, or even the attack step.</li>
+            <br/>
+            During this turn, you play cards from your hand. You can play one land per turn, and it is during your main phase that you play it. Just about every other card type can also only be played during your main phase. Instants, however, are the exception. You can play instants whenever you want, including during the upkeep or untap step, or even the attack step.</li>
           <li>The Attack phase.
+            <br/>
+            The attack phase is a very important phase, as it is often during this phase that players take damage and creatures die. The attack phase follows a very specific order. Here are the steps:
+            <ol>
+              <li>Declare attackers:
+                <br/>
+                The player whose turn it is declares how many creature he wants to attack with and which creatures he wants to attack. This player can choose to attack with no creatures, which means the rest of this phase does not happen. However, effects that happen during the attack phase still happen, so the phase is technically not skipped. Any creatures that are attacking tap, unless they have vigilance. </li>
+              <li>Declare blockers:
+                <br/>
+                The player who is being attacked, the <strong>defending player</strong>, picks how many creatures he wants to block with, and which creatures he wants to block. He can block all of the creatures or none of the creatures, and each attacking creature can be blocked by as many creatures as the defending player wants. So, if the defending player gets attacked by three creatures, he can block one of the attackers with one creature, one of the attackers with four creatures, and let the other attacker go through for damage.</li>
+              <li>Damage:
+                <br/>
+                Then, damage is dealt. Remember, creatures with first strike do damage before creatures without it. Any creatures not blocked do an amount of damage equal to their power(number on the left) to the defending player, reducing his health total by that many points. If there is one creature blocking one creature, what happens is simple. They both deal damage equal to their power to each other. If it is enough to kill one or both of them, those creatures die. If there are several creatures blocking a single creature, then the damage of all of the different creatures is added up against the lone one, but the lone creature's power must be spread out against all of the different creatures. Then, combat is over.</li>
+            </ol>
+          </li>
+          <li> Second Main Phase.
+            <br/>
+            This phase is identical to the First Main Phase with the exception that it comes after, and not before, the attack step. Also, some cards refer to one main phase or another.</li>
+          <li>The End Step
           <br/>
-          The attack phase is a very important phase, as it is often during this phase that players take damage and creatures die. The attack phase follows a very specific order. Here are the steps:
-          <ol>
-            <li>Declare attackers:
-            <br/>
-            The player whose turn it is declares how many creature he wants to attack with and which creatures he wants to attack. This player can choose to attack with no creatures, which means the rest of this phase does not happen. However, effects that happen during the attack phase still happen, so the phase is technically not skipped. Any creatures that are attacking tap, unless they have vigilance. </li>
-            <li>Declare blockers:
-            <br/>
-            The player who is being attacked, the <strong>defending player</strong>, picks how many creatures he wants to block with, and which creatures he wants to block. He can block all of the creatures or none of the creatures, and each attacking creature can be blocked by as many creatures as the defending player wants. So, if the defending player gets attacked by three creatures, he can block one of the attackers with one creature, one of the attackers with four creatures, and let the other attacker go through for damage.</li>
-            <li>Damage:
-            <br/>
-            Then, damage is dealt. Remember, creatures with first strike do damage before creatures without it. Any creatures not blocked do an amount of damage equal to their power(number on the left) to the defending player, reducing his health total by that many points. If there is one creature blocking one creature, what happens is simple. They both deal damage equal to their power to each other. If it is enough to kill one or both of them, those creatures die. If there are several creatures blocking a single creature, then the damage of all of the different creatures is added up against the lone one, but the lone creature's power must be spread out against all of the different creatures. Then, combat is over.</li>
-          </ol>
-        </li>
+          This is the final phase in a turn. Some cards have effects that say "at the beginning of your end step", which means they would happen at the end of your turn. All effects that say "until end of turn" end. All damage is removed from creatures. At this stage, if you have more than seven cards in your hand you must discard down to seven.</li>
+        </ul>
+        <p>The turn and the mana pool.
+          <br/>
+          After the end of each phase, all mana is emptied from your mana pool. This includes the end step and also the phases of other players' turns. This means that you should never tap more lands than you need to, because their mana for that turn would be wasted. This also means that if an effect causes you to gain a set amount of mana, you should make sure you have that ability to use said mana.
+        </p>
       </div>
+
+      <h2 id="playingTheGameSection">Playing the Game</h2>
+      <div class="navMenuBasicsPage">
+        <button class="basicsPageNavigationButton"><a href="settingUpSection">Setting up</a></button>
+      </div>
+      <div class="standardText">
+        <p>Now that you know the rules, you're ready to play. But there are still some things to be worked out.</p>
+        <p id="settingUpSection">Setting up.
+        <br/>
+        To play the game, there are a few things you need. First of all you need am opponent, or opponents. While there it technically no limit to how many people can play a single game of MTG, the more people you have the less time everyone has to play, and the more complicated the game becomes, so you probably shouldn't play with more than 8 or 9 people in a single game, and even that stretches it. Also, games with this many people easily take hours.
+        <br/>
+        Once you have found someone to  play with, you have to set up the playing field. Shuffle your library, or deck, and allow your opponent to cut before dealing yourself a hand of seven cards. Place your library beside you, with room for the battlefield and for your graveyard, MTG speak for discard pile.
+        <br/>
+        Note: graveyards are not shared.
+        <br/>
+        Find a way to count your life total, usually using pen and paper or dice, and set your life to 20. Determine who will go first, using some sort of random method, and then start to play.
+        <br/>
+        Note: In a two player game, the first person to play does not draw a card on their first turn. In a multiplayer game, however, everyone draws on their first turn regardless of who goes first.
+        </p>
+
     </div>
 </body>
 

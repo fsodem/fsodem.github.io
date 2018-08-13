@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(black, red);
+  background: linear-gradient(#1F225A, #E5D47C);
   background-repeat: no-repeat;
 }
 
@@ -23,7 +23,7 @@ html {
   width: 150px;
   font-family: Kanit, sans-serif;
   font-size: 20px;
-  background-color: #DDBBBB;
+  background-color: #BBBBDD;
 }
 
 .advanced_button:before {
@@ -57,15 +57,14 @@ html {
 }
 
 .advanced_button:hover {
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #big_advanced_div {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 50px;
-  height: 800px;
-  background: linear-gradient(red, black);
+  margin-top: 10px;
+  background: linear-gradient(#E5D47C, #1F225A);
 }
 
 .advanced_rules_banner {
@@ -82,7 +81,8 @@ html {
 }
 
 .banner_div {
-  border-top: solid #AAAAAA 4px;
+  border-top: solid #778CA3 12px;
   border-bottom: solid #AAAAAA 4px;
   padding: 5px;
+  margin-top: 10px;
 }

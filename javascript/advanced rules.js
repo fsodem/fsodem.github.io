@@ -4,6 +4,26 @@ function variables_in_mtg_description() {
 }
 
 function variables_in_mtg_basic() {
-  const description = "Variables in MTG."
+  const description = "Variables in MTG"
   document.getElementById("variables_in_mtg").innerHTML = description;
+}
+
+function the_stack_description() {
+  const description = "There is a subtle order in mtg, from when things are played to when they actually happen. While it may seem like a technicality, the stack is actually a very important part of learning the subtleties of MTG. Click to see more."
+  document.getElementById("the_stack").innerHTML = description;
+}
+
+function the_stack_basic() {
+  const description = "The stack"
+  document.getElementById("the_stack").innerHTML = description;
+}
+
+function mtg_formats_description() {
+  const description = "In MTG, there are many ways to play. Each obeys the basic rules, but then has requirements, for example on how to build your deck, or special rules that come into effect. Click to see more."
+  document.getElementById("mtg_formats").innerHTML = description;
+}
+
+function mtg_formats_basic() {
+  const description = "MTG formats"
+  document.getElementById("mtg_formats").innerHTML = description;
 }

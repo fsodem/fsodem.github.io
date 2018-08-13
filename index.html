@@ -26,16 +26,16 @@
   <div id="bigDiv">
 
     <div class="navMenuBasicsPage">
-      <button class="basicsPageNavigationButton"><a href="#introSection">Introduction</a></button>
-      <button class="basicsPageNavigationButton"><a href="#manaSection">Mana and Lands</a></button>
-      <button class="basicsPageNavigationButton"><a href="#playingCardSection">Playing Cards</a></button>
-      <button class="basicsPageNavigationButton"><a href="#creatureSection">Creatures</a></button>
-      <button class="basicsPageNavigationButton"><a href="#enchantmentSection">Enchantments</a></button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#introSection'">Introduction</button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#manaSection'">Mana and Lands</button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#playingCardSection'">Playing Cards</button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#creatureSection'">Creatures</button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#enchantmentSection'">Enchantments</a></button>
     </div>
     <div class="navMenuBasicsPage">
-      <button class="basicsPageNavigationButton"><a href="#artifactSection">Artifacts</a></button>
-      <button class="basicsPageNavigationButton"><a href="#instantAndSorcerySection">Instants and Sorceries</a></button>
-      <button class="basicsPageNavigationButton"><a href="#theTurnSection">The turn</a></button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#artifactSection'">Artifacts</a></button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#instantAndSorcerySection'">Instants and Sorceries</a></button>
+      <button class="basicsPageNavigationButton" onclick="window.location.href='#theTurnSection'">The turn</a></button>
       <button class="basicsPageNavigationButton"><a href="#playingTheGameSection">Playing the Game</a></button>
     </div>
 
@@ -292,9 +292,8 @@
             <p> Notice how, in this tribal instant, the tribalness is listed as "tribal instant - goblin"
             rather than "instant - tribal goblin" or something along those lines. Now, what does tribal mean? Let's say I build a deck around having a lot of goblins. Well, if a card gives me a bonus for playing goblin spells (remember, anything that isn't a land is technically a spell), then this would count. This doesn't really change the game in any other way, though. Also, this is the only time that instants or sorceries have anything specified in their card type.</p>
 
-            <p id="instantAndSorceryRecapQuiz">Now, you can take this recap quiz and figure out what you learned.</p>
-
-            <iframe class="recapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSct5uv_pe4_V_qtUQ1LFBtP20HJj76REm5nG7j9M1vxYkjgPA/viewform?embedded=true" ></iframe>
+            <p>Now, you can take this recap quiz and figure out what you learned.</p>
+            <iframe class="recapQuiz" id="instantAndSorceryRecapQuiz" src="https://docs.google.com/forms/d/e/1FAIpQLSct5uv_pe4_V_qtUQ1LFBtP20HJj76REm5nG7j9M1vxYkjgPA/viewform?embedded=true"></iframe>
 
           </div>
 

@@ -1,5 +1,5 @@
 html {
-  background: linear-gradient(#1F225A, #E5D47C);
+  background: linear-gradient(#4834D4, #E5D47C);
   background-repeat: no-repeat;
 }
 
@@ -63,8 +63,8 @@ html {
 #big_advanced_div {
   margin-left: 5%;
   margin-right: 5%;
-  margin-top: 10px;
-  background: linear-gradient(#E5D47C, #1F225A);
+  margin-top: 5px;
+  background: linear-gradient(#E5D47C, #4834D4);
 }
 
 .advanced_rules_banner {
@@ -74,7 +74,7 @@ html {
 
 #title_of_advanced_rules {
   font-family: Kanit, sans-serif;
-  margin-top: 75px;
+  margin-top: 25px;
   color: #333333;
   margin-left: 37%;
   font-size: 50px;

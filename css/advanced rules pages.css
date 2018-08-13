@@ -1,0 +1,69 @@
+html {
+  background-color: #95AFC0;
+}
+
+.big_div_advanced_pages {
+  width: 90%;
+  margin: auto;
+  background-color: #C7ECEE;
+  margin-top: 15px;
+  padding: 10px;
+}
+
+.return_button_advanced_div {
+  background-color: #7ED6DF;
+  width: 60%;
+  margin: auto;
+  margin-top: 15px;
+  padding: 5px;
+}
+
+.return_button_advanced {
+  height: 35px;
+  margin-left: 40%;
+  width: 20%;
+  border-radius: 50%;
+  border-style: none;
+  background-color: #686DE0;
+}
+
+.return_button_advanced:hover {
+  background-color: #FFFFFF;
+  color: #EB4D4B;
+  box-shadow: 0px 5px 20px 5px rgba(235, 77, 75, 0.4), 0px -5px 20px 5px rgba(235, 77, 75, 0.4);
+}
+
+.demoCard {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  border: 10px solid #535C68;
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 9px 21px 0 rgba(0, 0, 0, 0.38);
+}
+
+.demoImage {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 15px;
+  border: 5px solid rgba(165, 177, 194, 1.0);
+  box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.4), 0 9px 21px 0 rgba(0, 0, 0, 0.38);
+  width: 20%;
+}
+
+.titles {
+  text-align: center;
+  width: 80%;
+  margin: auto;
+  margin-top: 15px;
+  font-family: 'Kanit', sans-serif;
+  font-size: 25px;
+  background-color: #686DE0;
+  color: #EEEEEE;
+}
+
+.standardText {
+  font-family: "Open Sans", sans-serif;
+  padding: 5px;
+}

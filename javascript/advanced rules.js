@@ -27,3 +27,23 @@ function mtg_formats_basic() {
   const description = "MTG formats"
   document.getElementById("mtg_formats").innerHTML = description;
 }
+
+function counters_in_mtg_description() {
+  const description = "In MTG, keeping track of certain things as the game moves and evolves is important. Counters let you do that. Click to see more."
+  document.getElementById("counters_in_mtg").innerHTML = description;
+}
+
+function counters_in_mtg_basic() {
+  const description = "Counters in MTG"
+  document.getElementById("counters_in_mtg").innerHTML = description;
+}
+
+function zones_in_mtg_description() {
+  const description = "In MTG, there are many zones, each with different ways for cards to enter it or interact with it and different effects any given zone has on the game. Click to see more."
+  document.getElementById("zones_in_mtg").innerHTML = description;
+}
+
+function zones_in_mtg_basic() {
+  const description = "Zones in MTG"
+  document.getElementById("zones_in_mtg").innerHTML = description;
+}

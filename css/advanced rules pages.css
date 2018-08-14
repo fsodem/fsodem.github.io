@@ -52,7 +52,7 @@ html {
   width: 20%;
 }
 
-.titles {
+.title {
   text-align: center;
   width: 80%;
   margin: auto;
@@ -63,7 +63,18 @@ html {
   color: #EEEEEE;
 }
 
+.section_header {
+  background-color: #4834D4;
+  color: #DDDDDD;
+  width: 100%;
+  font-family: Kanit, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 15px;
+}
+
 .standardText {
   font-family: "Open Sans", sans-serif;
   padding: 5px;
+  font-size: 15px;
 }

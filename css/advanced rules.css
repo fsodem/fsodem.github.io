@@ -9,25 +9,20 @@ html {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  /* position: relative; */
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   /* My stuff below */
   border: none;
-  margin-right: 27%;
-  width: 20%;
-  height: 200px;
-  float: left;
-  width: 610px;
+  width: 60%;
+  height: 96%;
   font-family: Kanit, sans-serif;
   font-size: 20px;
-  /* background-color: #BBBBDD; */
   background: none;
   position: absolute;
-  /* left: 0; */
-  right: 0;
+  left: 20%;
+  top: 2%;
   color: white;
 }
 
@@ -57,13 +52,13 @@ html {
 }
 
 .advanced_button:hover:before, .advanced_button:focus:before, .advanced_button:active:before {
-  -webkit-transform: scaleX(0.28);
-  transform: scaleX(0.28);
+  -webkit-transform: scaleX(0.34);
+  transform: scaleX(0.34);
 }
 
 .advanced_button:hover {
   font-size: 12px;
-  padding-right: 450px;
+  padding-right: 41%;
 }
 
 #big_advanced_div {
@@ -74,9 +69,11 @@ html {
 }
 
 .advanced_rules_banner {
-  height: 200px;
-  width: 600px;
-  margin-left: 300px;
+  width: 60%;
+  height: calc(50% / 3);
+  position: relative;
+  left: 20%;
+  border: none;
 }
 
 #title_of_advanced_rules {
@@ -90,6 +87,10 @@ html {
 .banner_div {
   border-top: solid #778CA3 12px;
   border-bottom: solid #AAAAAA 4px;
-  padding: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   margin-top: 10px;
+  position: relative;
+  top: 0;
+  bottom: 0;
 }

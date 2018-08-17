@@ -9,21 +9,26 @@ html {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative;
+  /* position: relative; */
   -webkit-transition-property: color;
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   /* My stuff below */
   border: none;
-  margin-left: 20%;
+  margin-right: 27%;
   width: 20%;
   height: 200px;
   float: left;
-  width: 150px;
+  width: 610px;
   font-family: Kanit, sans-serif;
   font-size: 20px;
-  background-color: #BBBBDD;
+  /* background-color: #BBBBDD; */
+  background: none;
+  position: absolute;
+  /* left: 0; */
+  right: 0;
+  color: white;
 }
 
 .advanced_button:before {
@@ -52,12 +57,13 @@ html {
 }
 
 .advanced_button:hover:before, .advanced_button:focus:before, .advanced_button:active:before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
+  -webkit-transform: scaleX(0.28);
+  transform: scaleX(0.28);
 }
 
 .advanced_button:hover {
   font-size: 12px;
+  padding-right: 450px;
 }
 
 #big_advanced_div {
@@ -70,6 +76,7 @@ html {
 .advanced_rules_banner {
   height: 200px;
   width: 600px;
+  margin-left: 300px;
 }
 
 #title_of_advanced_rules {
